@@ -3,8 +3,10 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
+  base: "/seco-tms-remix-spa/",
   plugins: [
     remix({
+      basename: "/seco-tms-remix-spa/",
       ssr: false,
       future: {
         v3_fetcherPersist: true,
